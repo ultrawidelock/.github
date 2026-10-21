@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="760" viewBox="0 0 880 760" role="img" aria-labelledby="t d">
+<title id="t">Walk up. It unlocks.</title>
+<desc id="d">A phone walks toward a door. The lock in the door ranges it with radio pulses drawn to scale on a ticked track, and the bolt slides open once the phone is inside the 1.00 m bound. Along the bottom, the seven libraries the lock is built from, with their measured flash sizes.</desc>
+<style>
+  .sans{font-family:system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
+  .walk{animation:walk 5.2s cubic-bezier(.16,1,.3,1) .6s forwards}
+  .far{animation:hide .9s ease .9s forwards}
+  .near{opacity:0;animation:show .8s ease 4.4s forwards}
+  .bolt{animation:bolt .55s cubic-bezier(.16,1,.3,1) 5.5s forwards}
+  .lit{opacity:0;animation:show .6s ease 5.4s forwards}
+  .arc{animation:wave 2.4s cubic-bezier(.16,1,.3,1) infinite}
+  .arc.b{animation-delay:.3s}.arc.c{animation-delay:.6s}
+  @keyframes walk{to{transform:translateX(304px)}}
+  @keyframes hide{to{opacity:0}}
+  @keyframes show{to{opacity:1}}
+  @keyframes bolt{to{transform:translateX(26px)}}
+  @keyframes wave{0%{opacity:.35}22%{opacity:1}100%{opacity:.35}}
+  @media (prefers-reduced-motion:reduce){
+    .walk,.far,.near,.bolt,.lit,.arc{animation:none}
+    .walk{transform:translateX(304px)}.far{opacity:0}.near{opacity:1}.bolt{transform:translateX(26px)}.lit{opacity:1}
+  }
+</style>
+<defs>
+  <clipPath id="left"><rect x="0" y="0" width="640" height="616"/></clipPath>
+  <radialGradient id="bloom"><stop offset="0" stop-color="#2ee6b8" stop-opacity=".22"/><stop offset=".5" stop-color="#2ee6b8" stop-opacity=".07"/><stop offset="1" stop-color="#2ee6b8" stop-opacity="0"/></radialGradient>
+</defs>
+
+<rect x=".5" y=".5" width="879" height="759" rx="28" fill="#061012" stroke="#c6e8da" stroke-opacity=".145"/>
+
+<!-- spent rounds, almost gone -->
+<g fill="none" stroke="#c6e8da" stroke-opacity=".045" stroke-width="1.5" clip-path="url(#left)">
+  <circle cx="666" cy="330" r="300"/><circle cx="666" cy="330" r="390"/><circle cx="666" cy="330" r="480"/>
+</g>
+
+<!-- the claim -->
+<g class="sans" font-weight="700" font-size="58" letter-spacing="-2.3">
+  <text x="56" y="112" fill="#ffffff">Walk up.</text>
+  <text x="56" y="174" fill="#2ee6b8">It unlocks.</text>
+</g>
+<g class="sans" font-size="17" fill="#c9d8d2">
+  <text x="56" y="220">Open-source firmware for a door lock that opens with the</text>
+  <text x="56" y="244">digital key in your phone. No vendor app, account or cloud.</text>
+</g>
+<text class="mono" x="56" y="286" font-size="12.5" fill="#8c9491">bound 1.00 m  ·  three rounds agree  ·  verified on the lock</text>
+
+<!-- the door, in elevation; the bolt sits under the leaf so it hides when it retracts -->
+<rect class="bolt" x="616" y="322" width="26" height="16" rx="3" fill="#c6e8da" fill-opacity=".85"/>
+<rect x="626.5" y="56.5" width="208" height="524" rx="8" fill="none" stroke="#c6e8da" stroke-opacity=".22"/>
+<rect x="640.5" y="70.5" width="180" height="510" rx="4" fill="#0b1618" stroke="#c6e8da" stroke-opacity=".3"/>
+<rect x="660.5" y="90.5" width="140" height="196" rx="3" fill="none" stroke="#c6e8da" stroke-opacity=".1"/>
+<rect x="660.5" y="372.5" width="140" height="188" rx="3" fill="none" stroke="#c6e8da" stroke-opacity=".1"/>
+
+<!-- the ranging pulse, leaving the lock and decaying outward -->
+<circle cx="666" cy="330" r="150" fill="url(#bloom)" clip-path="url(#left)"/>
+<g fill="none" stroke-width="22" stroke-linecap="round" clip-path="url(#left)">
+  <path class="arc" d="M598 262A96 96 0 0 0 598 398" stroke="#2ee6b8" stroke-opacity=".62"/>
+  <path class="arc b" d="M556 220A156 156 0 0 0 556 440" stroke="#2ee6b8" stroke-opacity=".32"/>
+  <path class="arc c" d="M514 178A215 215 0 0 0 514 482" stroke="#2ee6b8" stroke-opacity=".16"/>
+</g>
+
+<!-- the lock body and its anchor: neutral while closed, mint once open -->
+<rect x="648.5" y="300.5" width="36" height="60" rx="11" fill="#111416" stroke="#c6e8da" stroke-opacity=".35"/>
+<circle cx="666" cy="330" r="7" fill="#c6e8da" fill-opacity=".45"/>
+<g class="lit">
+  <circle cx="666" cy="330" r="13" fill="none" stroke="#2ee6b8" stroke-opacity=".45" stroke-width="2.5"/>
+  <circle cx="666" cy="330" r="7" fill="#2ee6b8"/>
+  <text class="mono" x="694" y="334" font-size="12.5" font-weight="bold" fill="#2ee6b8">unlock</text>
+</g>
+
+<!-- the measuring track: the door is the datum -->
+<path d="M56 580H834" stroke="#c6e8da" stroke-opacity=".3" stroke-width="2"/>
+<g stroke="#c6e8da" stroke-opacity=".3" stroke-width="2">
+  <path d="M56 580v14"/><path d="M173 580v14"/><path d="M290 580v14"/><path d="M523 580v14"/>
+</g>
+<g class="mono" font-size="12" fill="#8c9491" text-anchor="middle">
+  <text x="56" y="612">2.5 m</text><text x="173" y="612">2 m</text><text x="290" y="612">1.5 m</text><text x="523" y="612">0.5 m</text>
+</g>
+<path class="lit" d="M406 554v40" stroke="#2ee6b8" stroke-opacity=".35" stroke-width="10" stroke-linecap="round"/>
+<path d="M406 556v38" stroke="#2ee6b8" stroke-width="4" stroke-linecap="round"/>
+<text class="mono" x="406" y="612" font-size="12" font-weight="bold" fill="#2ee6b8" text-anchor="middle">1.00 m</text>
+
+<!-- where the walk started, and the path it took: shown once the phone arrives -->
+<g class="near">
+  <path d="M132 330H408" stroke="#c6e8da" stroke-opacity=".22" stroke-dasharray="2 6"/>
+  <rect x="112.75" y="316.75" width="14.5" height="26.5" rx="3.5" fill="none" stroke="#c6e8da" stroke-opacity=".3" stroke-width="1.5"/>
+  <text class="mono" x="120" y="368" font-size="11.5" fill="#8c9491" text-anchor="middle">2.2 m</text>
+</g>
+
+<!-- the phone, walking in once -->
+<g class="walk">
+  <path d="M120 344V578" stroke="#c6e8da" stroke-opacity=".18" stroke-dasharray="2 5"/>
+  <rect x="112" y="316" width="16" height="28" rx="4" fill="#ffffff"/>
+  <rect x="116" y="321" width="8" height="1.5" rx=".75" fill="#061012"/>
+  <text class="mono far" x="120" y="368" font-size="11.5" fill="#c9d8d2" text-anchor="middle">2.2 m</text>
+  <text class="mono near" x="120" y="368" font-size="11.5" fill="#2ee6b8" text-anchor="middle">0.9 m</text>
+</g>
+
+<!-- the parts -->
+<path d="M56 640H824" stroke="#c6e8da" stroke-opacity=".145"/>
+<g class="sans" text-anchor="middle">
+  <g fill="none" stroke="#c6e8da" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tinyble: a host and the link it serves -->
+    <g transform="translate(111 666)"><circle cx="-4" cy="0" r="3"/><path d="M2 -6a8.5 8.5 0 0 1 0 12M6 -10a14 14 0 0 1 0 20"/></g>
+    <!-- tinycred: a credential -->
+    <g transform="translate(221 666)"><rect x="-10" y="-7" width="20" height="14" rx="3"/><path d="M-5 3h6"/></g>
+    <!-- tinyuwb: the ranging round -->
+    <g transform="translate(331 666)"><circle cx="-8" cy="0" r="2.5"/><path d="M-1 -5a7 7 0 0 1 0 10M4 -9a12.5 12.5 0 0 1 0 18"/><path d="M11 -4v8"/></g>
+    <!-- tinytalk: a node on the network -->
+    <g transform="translate(441 666)"><path d="M0 -11 9.5 -5.5v11L0 11l-9.5 -5.5v-11z"/></g>
+    <!-- tinygrid: an end device, never routing -->
+    <g transform="translate(551 666)"><circle cx="-8" cy="6" r="2.5"/><circle cx="8" cy="6" r="2.5"/><path d="M-6 4.5 -1.5 -4M6 4.5 1.5 -4"/></g>
+    <!-- tinypsa: a seal -->
+    <g transform="translate(661 666)"><path d="M0 -11 11 0 0 11 -11 0z"/></g>
+    <!-- tinyfota: what changed, written in place -->
+    <g transform="translate(771 666)"><path d="M0 -11v10M-5 -6 0 -1l5 -5"/><path d="M-10 6v4h20v-4"/></g>
+  </g>
+  <g fill="#2ee6b8">
+    <circle cx="107" cy="666" r="3"/><circle cx="224" cy="663" r="2.5"/><circle cx="323" cy="666" r="2.5"/><circle cx="441" cy="666" r="3"/><circle cx="551" cy="659" r="3"/><circle cx="661" cy="666" r="3"/><circle cx="771" cy="671" r="2.5"/>
+  </g>
+  <g font-size="14" font-weight="600" fill="#ffffff">
+    <text x="111" y="706">tinyble</text><text x="221" y="706">tinycred</text><text x="331" y="706">tinyuwb</text><text x="441" y="706">tinytalk</text><text x="551" y="706">tinygrid</text><text x="661" y="706">tinypsa</text><text x="771" y="706">tinyfota</text>
+  </g>
+  <g font-size="12.5" fill="#c9d8d2">
+    <text x="111" y="724">BLE host</text><text x="221" y="724">key reader</text><text x="331" y="724">UWB ranging</text><text x="441" y="724">accessory node</text><text x="551" y="724">mesh end device</text><text x="661" y="724">crypto provider</text><text x="771" y="724">delta updates</text>
+  </g>
+  <g class="mono" font-size="11.5" fill="#2ee6b8">
+    <text x="111" y="742">6.7 KB</text><text x="221" y="742">12.7 KB</text><text x="331" y="742">8.5 KB</text><text x="441" y="742">52.6 KB</text><text x="551" y="742">19.3 KB</text><text x="661" y="742">17.8 KB</text><text x="771" y="742">4.7 KB</text>
+  </g>
+</g>
+</svg>

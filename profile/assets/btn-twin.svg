@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="227" height="44" viewBox="0 0 227 44" role="img" aria-label="Try it in your browser">
+  <rect width="227" height="44" rx="22" fill="#2ee6b8"/>
+  <text x="178" y="27.5" text-anchor="end" font-family="system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#04100c">Try it in your browser</text>
+  <path d="M188 22H201M196 17l5 5-5 5" fill="none" stroke="#04100c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

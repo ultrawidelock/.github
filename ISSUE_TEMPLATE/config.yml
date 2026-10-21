@@ -1,0 +1,13 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a vulnerability
+    url: https://github.com/ultrawidelock/.github/blob/main/SECURITY.md
+    about: >
+      This is lock firmware. Report anything with a security consequence
+      privately, not as a public issue.
+  - name: Contributing
+    url: https://github.com/ultrawidelock/.github/blob/main/CONTRIBUTING.md
+    about: What a change needs before it can be merged.
+  - name: Guides
+    url: https://ultrawidelock.com/docs/index.html
+    about: Adding the key, board bring-up, porting, and troubleshooting.

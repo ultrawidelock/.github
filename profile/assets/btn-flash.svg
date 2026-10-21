@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="44" viewBox="0 0 170 44" role="img" aria-label="Flash a board">
+  <rect x=".5" y=".5" width="169" height="43" rx="21.5" fill="#061012" stroke="#c6e8da" stroke-opacity=".3"/>
+  <text x="121" y="27.5" text-anchor="end" font-family="system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#ffffff">Flash a board</text>
+  <path d="M131 22h13M139 17l5 5-5 5" fill="none" stroke="#c6e8da" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

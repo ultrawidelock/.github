@@ -1,0 +1,87 @@
+name: Bug report
+description: Something behaves differently than documented
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not use this form for anything with a security consequence.
+        Use the private reporting path in
+        [SECURITY.md](https://github.com/ultrawidelock/.github/blob/main/SECURITY.md)
+        instead.
+
+        Never paste a radio capture or a bench log without scrubbing it.
+        Those can carry live key material and paired-device names.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: The observed behavior, and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: >
+        The shortest sequence that shows it. A failing host test is the most
+        useful possible report.
+    validations:
+      required: true
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or tag
+      description: Output of `git rev-parse --short HEAD`, or the release tag.
+    validations:
+      required: true
+
+  - type: input
+    id: board
+    attributes:
+      label: Board and hardware
+      description: >
+        For example "DWM3001CDK", or "nRF5340 DK + DWM3000EVB". Write "none"
+        for a host-only issue.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which seam is involved, as best you can tell.
+      options:
+        - Credential protocol
+        - UWB ranging
+        - BLE transport
+        - NFC
+        - Mesh networking
+        - Accessory node / commissioning
+        - Crypto
+        - Signed update
+        - Credential storage
+        - Build system / packaging
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: What you ran
+      description: >
+        The check the repository's README names, and any target build. Paste
+        the failing portion rather than the whole log.
+      render: shell
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Host environment
+      description: >
+        Operating system, compiler, `python3 --version`, and the SDK version
+        if a target build is involved.
